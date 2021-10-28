@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Patrick+Hand&family=Rampart+One&display=swap');
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } 
+body{
+  
+    background-color: rgba(43, 115, 187, 0.486);
+    
+}
+h2,h1,li{
+  font-family: 'Rampart One', cursive;
+}
+p{
+  padding: 15px;
+  font-family: 'Patrick Hand', cursive;
+
+}
+#page-wrapper{
+    width: 100%;
+  
+    margin: 0 auto;
+}
+header img{
+    width: 100%;
+    height: 100px;
+    margin-bottom: -50px;
+    
+   
+}
+header{
+    display: inline-block;
+    position: fixed;
+    top:0;
+    background-color: #56d9eb;
+    width:100%;
+}
+header h1{
+  
+    text-transform: uppercase;
+    text-align: left;
+    width:30%;
+    display:inline-block;
+}
+header nav{
+    display:flex;
+    float: right;
+    width:30%;
+}
+header ul{
+    display: inline-block;
+
+    list-style-type: none;
+    margin: 0.5em auto;
+    text-align: center;
+}
+
+header ul li{
+    display: inline-block;
+}
+header ul li a{
+    text-decoration: none;
+    border: solid;
+    border-color: #69929793;
+    border-radius: 20px;
+    background-color: #417e71;
+    color: rgb(15, 214, 25);
+    padding: 0.3em;
+}
+header ul li a:hover{
+    background-color: #B8B799;
+    border-color: #B8B799;
+}
+header ul li a:active{
+    padding: 0.2em;
+}
+#description{
+    text-align: center;
+    margin-top: 60px;
+}
+#submit{
+  background-color: rgb(0, 255, 221);
+}
+#form input{
+    border-radius: 5px;
+    
+    
+   
+}
+#form{
+    margin-top: 200px;
+    text-align: center;
+
+}
+#video{
+    display: flex;
+    align-items: center;
+    
+    
+    border-radius: 20px;
+    width: 50%;
+    margin: 100px  auto;
+    box-shadow:  0px 0px 40px 5px  rgb(3, 23, 70);
+  
+}
+#flex-container{
+    display: flex;
+    width: 100px;
+    margin-top: 100px;
+    width: 100%;
+    padding: 1em;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+#flex-container .boxes{
+    position:relative;
+    width: 150px;
+    height: 180px;
+    border: 1px solid rgb(158, 18, 18);
+    border-radius: 10px;
+    margin: 15px;
+    text-align: center;
+    box-shadow:  0px 0px 40px 5px  rgb(3, 23, 70);
+    padding:0.5em; 
+   
+    
+}
+.position-submit{
+    margin: auto;
+    border-radius: 5px;
+}
+
+#flex-container li{
+    list-style: none;
+} 
+
+@media (max-width: 650px) {
+    nav {
+      margin-top: 10px;
+      width: 100%;
+      display: flex;
+      
+      align-items: center;
+      padding: 0 50px;
+    }
+    nav li {
+      padding-bottom: 5px;
+    }
+  }
+  
+  nav > ul {
+    width: 25vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+
+  @media (max-width: 650px) {
+    .logo {
+      margin-top: 15px;
+      width: 100%;
+      position: relative;
+    }
+  }
+  
+  .logo > img {
+    width: 10%;
+    height: 10%;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px;
+  }
+  @media (max-width: 650px) {
+    nav > ul {
+      flex-direction: column;
+    }
+  }
+ 
+ #pricing {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+.product > .level {
+  background-color: #ddd;
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.product > h2 {
+  margin-top: 15px;
+}
+
+.product > ol {
+  margin: 15px 0;
+}
+
+.product > ol > li {
+  padding: 5px 0;
+}
+
+.product > button {
+  border: 0;
+  margin: 15px 0;
+  background-color: #f1c40f;
+  font-weight: 400;
+}
+
+.product > button:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+
+@media (max-width: 800px) {
+  #pricing {
+    flex-direction: column;
+  }
+  .product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
